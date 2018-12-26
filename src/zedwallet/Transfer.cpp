@@ -566,9 +566,9 @@ void doTransfer(std::string address, uint64_t amount, uint64_t fee,
 
     //@BEGIN Modification For Coin Swap Burn
     std::cout
-        << InformationMsg("Do you want to setup an unlock time? Transaction will be locked until the given height is reached.")
+        << InformationMsg("Do you want to setup an unlock time? Transaction and the related change will be locked until the given height is reached.")
         << std::endl
-        << InformationMsg("Insert '400000000' if you want to burn the coins for the coinswap.")
+        << InformationMsg("Insert a blockchain height in the future to lock the coins and the change to that blockchain height to that height")
         << std::endl
         << "Hit enter for the default of no unlock time: ";
     std::string unlockTime;
